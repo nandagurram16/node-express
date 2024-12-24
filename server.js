@@ -1,3 +1,4 @@
+import chalk from 'chalk'
 import express from 'express'
 
 const app=express()
@@ -12,5 +13,4 @@ app.get('/nanda',(req,resp)=>{
 
 app.listen(5000,(err)=>{
       if (err) throw err
-      console.log(`server is running`)
-})
+      console.log(chalk.bgBlue(`server is running`))})
